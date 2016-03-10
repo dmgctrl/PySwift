@@ -204,6 +204,28 @@ To use titleColor for button state you must set the button as "Custom" type in I
 }
 
 ```
+#### TextViews
+
+* textAlignment values : ` "Left", "Right", "Center", "Justified", "Natural" `
+
+```
+TextViews": {
+       "TV1": {
+           "textColor": "blueColor",
+           "textAlignment": "Center",
+           "attributes": {
+               "fontStyle": {
+                   "font": "primaryFontMedium",
+                   "size": 22
+               },
+               "tracking": 100,
+               "lineSpacing": 5,
+               "ligature": 0
+           }
+       }
+   }
+
+```
 
 #### SegmentedControls
 
