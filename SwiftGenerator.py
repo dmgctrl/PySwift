@@ -19,7 +19,6 @@ class SwiftGenerator:
         self.clearBackground = "object.backgroundColor = UIColor.clearColor()"
         self.attributeDictionary = " Dictionary<String, AnyObject>"
         self.seperator = ","
-        self.unwrap = "!"
 
     def end(self):
         return string.join(self.code, "")
@@ -120,7 +119,7 @@ class SwiftGenerator:
                 if object.cornerRadius: set([self.write("object.layer.cornerRadius = " + str(object.cornerRadius))]), self.newline()
                 if object.borderColor: set([self.write("object.layer.borderColor = " + object.borderColor + ".CGColor")]), self.newline()
                 if object.borderWidth: set([self.write("object.layer.borderWidth = " + str(object.borderWidth))]), self.newline()
-
+            
             if isinstance(object, UIObjects.Label):
                 if object.textColor: set([self.write("object.textColor = " + object.textColor)]), self.newline()
                 if object.attributes: set([self.write("object.attributedText = NSAttributedString(string: object.text!, attributes:attributesFor" + object.name + "())")]), self.newline()
@@ -128,7 +127,7 @@ class SwiftGenerator:
             if isinstance(object, UIObjects.TextView):
                 if object.attributes: set([self.write("object.attributedText = NSAttributedString(string: object.text!, attributes:attributesFor" + object.name + "())")]), self.newline()
                 if object.textColor: set([self.write("object.textColor = " + object.textColor)]), self.newline()
-
+            
             if isinstance(object, UIObjects.Button):
                 set([self.write("object.layer.masksToBounds = true")]), self.newline()
                 if object.fontStyle: set([self.write("object.titleLabel?.font = " + object.fontStyle.toSwift())]), self.newline()
@@ -169,7 +168,7 @@ class SwiftGenerator:
                 if object.selectedState:
                     if object.selectedState.backgroundColor: set([self.write("object.setBackgroundImage(UIImage.imageWithColor(" + object.selectedState.backgroundColor + "), forState: .Selected, barMetrics: .Default)")]), self.newline()
                     if object.selectedState.textColor: set([self.write("object.setTitleTextAttributes([NSFontAttributeName: " + object.fontStyle.toSwift() + "!, NSForegroundColorAttributeName: " + object.selectedState.textColor + "], forState: .Selected)")]),self.newline()
-
+            self.outdent()
             self.write("}")
             self.closeFunction()
             self.nextFunction()
@@ -189,7 +188,7 @@ class SwiftGenerator:
             self.indent(),self.newline()
             if isinstance(attributes, UIObjects.TextAttributes):
                 attributes.seperatorCount = len(attributes.properties) - 1
-                if attributes.fontStyle: set([self.write("NSFontAttributeName: " + attributes.fontStyle.toSwift() + self.unwrap)]),self.addSeperator(attributes),self.newline()
+                if attributes.fontStyle: set([self.write("NSFontAttributeName: " + attributes.fontStyle.toSwift() + "!")]),self.addSeperator(attributes),self.newline()
                 if attributes.tracking:
                     characterSpacing = attributes.fontStyle.size * attributes.tracking / 1000
                     set([self.write("NSKernAttributeName: " + str(characterSpacing))]),self.addSeperator(attributes),self.newline()
