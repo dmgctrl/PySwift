@@ -177,5 +177,16 @@
             "progressImage": "defaultFilledTrackImage",
             "trackImage": "defaultEmptyTrackImage"
         }
+    },
+    "TextViews": {
+        "T1": {
+            "textColor": "blueColor",
+            "fontStyle": {
+                "font": "primaryFontLight",
+                "size": 17
+            },
+            "textAlignment": 1,
+            "lineSpacing": 5
+        }
     }
 }

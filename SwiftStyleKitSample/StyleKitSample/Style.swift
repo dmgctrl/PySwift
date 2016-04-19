@@ -4,20 +4,21 @@ class Style: NSObject {
     
     static let sharedInstance = Style()
     
-    var fonts = [String: String]()
-    var colors = [String: UIColor]()
-    var imageNames: [String: String]?
-    var labelStyles = [String: [String:AnyObject]]()
-    var buttonStyles = [String: [String:AnyObject]]()
-    var textFieldStyles = [String: [String:AnyObject]]()
-    var segmentedControlStyles = [String: [String: AnyObject]]()
-    var sliderStyles = [String: [String: AnyObject]]()
-    var stepperStyles: [String: [String: AnyObject]]?
-    var progressViewStyles: [String: [String: AnyObject]]?
+    private var fonts = [String: String]()
+    private var colors = [String: UIColor]()
+    private var imageNames: [String: String]?
+    private var labelStyles = [String: [String:AnyObject]]()
+    private var buttonStyles = [String: [String:AnyObject]]()
+    private var textFieldStyles = [String: [String:AnyObject]]()
+    private var segmentedControlStyles = [String: [String: AnyObject]]()
+    private var sliderStyles = [String: [String: AnyObject]]()
+    private var stepperStyles: [String: [String: AnyObject]]?
+    private var progressViewStyles: [String: [String: AnyObject]]?
+    private var textViewStyles: [String: [String: AnyObject]]?
     
     override init() {
         super.init()
-        serialize()
+        deserialize()
     }
     
     //Mark: Serialize
@@ -37,7 +38,7 @@ class Style: NSObject {
         return docsDir.URLByAppendingPathComponent(fileName)
     }
     
-    func serialize() {
+    func deserialize() {
         
         let stylePath = configurationStyleURL()!
         
@@ -113,6 +114,16 @@ class Style: NSObject {
                 }
                 
                 progressViewStyles = theProgressViewStyles
+            }
+            
+            if let textViewDict = json[UIElements.TextViews.rawValue] as? [String: [String: AnyObject]] {
+                var theTextViewStyles = [String: [String: AnyObject]]()
+                
+                for (textViewKey, specification) in textViewDict {
+                    theTextViewStyles[textViewKey] = specification
+                }
+                
+                textViewStyles = theTextViewStyles
             }
             
         } catch {
@@ -281,12 +292,12 @@ class Style: NSObject {
         
         for (styleKey, element) in info {
             guard let styles = labelStyles[styleKey] else {
-                return
+                continue
             }
             
             for (property, value) in styles {
                 guard let theProperty = LabelProperties(rawValue: property) else {
-                    return
+                    continue
                 }
                 
                 switch theProperty {
@@ -306,12 +317,12 @@ class Style: NSObject {
         
         for (styleKey, element) in info {
             guard let styles = buttonStyles[styleKey] else {
-                return
+                continue
             }
             
             for (property, value) in styles {
                 guard let theProperty = ButtonProperties(rawValue: property) else {
-                    return
+                    continue
                 }
                 
                 switch theProperty {
@@ -351,12 +362,12 @@ class Style: NSObject {
         
         for (styleKey, element) in info {
             guard let styles = textFieldStyles[styleKey] else {
-                return
+                continue
             }
             
             for (property, value) in styles {
                 guard let theProperty = TextFieldProperties(rawValue: property) else {
-                    return
+                    continue
                 }
                 
                 switch theProperty {
@@ -375,14 +386,14 @@ class Style: NSObject {
                     case TextFieldProperties.TextAlignment:
                         if let aValue = value as? Int {
                             guard let textAlignment = NSTextAlignment(rawValue: aValue) else {
-                                break
+                                continue
                             }
                             element.textAlignment = textAlignment
                         }
                     case TextFieldProperties.BorderStyle:
                         if let aValue = value as? Int {
                             guard let textBorderStyle = UITextBorderStyle(rawValue: aValue) else {
-                                break
+                                continue
                             }
                             element.borderStyle = textBorderStyle
                         }
@@ -404,7 +415,7 @@ class Style: NSObject {
         
         for (styleKey, element) in info {
             guard let styles = segmentedControlStyles[styleKey] else {
-                return
+                continue
             }
             
             var normalAttributes = [String: AnyObject]()
@@ -412,17 +423,17 @@ class Style: NSObject {
             
             for (property, value) in styles {
                 guard let theProperty = SegmentedControlProperties(rawValue: property) else {
-                    return
+                    continue
                 }
                 
                 switch theProperty {
                     case .FontStyle:
                         guard let fontInfo = value as? [String: AnyObject], fontKey = fontInfo[FontProperties.Name.rawValue] as? String,
                             fontSize = fontInfo[FontProperties.Size.rawValue] as? Int else {
-                            break
+                            continue
                         }
                         guard let fontName = fonts[fontKey], font = UIFont(name: fontName, size: CGFloat(fontSize)) else {
-                            break
+                            continue
                         }
                         normalAttributes[NSFontAttributeName] = font
                         selectedAttributes[NSFontAttributeName] = font
@@ -574,6 +585,44 @@ class Style: NSObject {
                         if let imageKey = value as? String, imageName = imageNames?[imageKey] {
                             element.trackImage = UIImage(named: imageName)
                         }
+                }
+            }
+        }
+    }
+    
+    func style(withTextViewsAndStyles textViewInfo: [String: UITextView]?) {
+        guard let info = textViewInfo, theTextViewStyles = textViewStyles else {
+            return
+        }
+        
+        for (styleKey, element) in info {
+            guard let styles = theTextViewStyles[styleKey] else {
+                continue
+            }
+            
+            for (property, value) in styles {
+                guard let theProperty = TextViewProperties(rawValue: property) else {
+                    continue
+                }
+                
+                switch theProperty {
+                case .TextColor:
+                    if let colorKey = value as? String, color = colors[colorKey] {
+                        element.textColor = color
+                    }
+                case .TextAlignment:
+                    if let theValue = value as? Int, textAlignment = NSTextAlignment(rawValue: theValue) {
+                        element.textAlignment = textAlignment
+                    }
+                case .FontStyle:
+                    guard let fontInfo = value as? [String: AnyObject], fontKey = fontInfo[FontProperties.Name.rawValue] as? String,
+                        fontSize = fontInfo[FontProperties.Size.rawValue] as? Int else {
+                            continue
+                    }
+                    guard let fontName = fonts[fontKey], font = UIFont(name: fontName, size: CGFloat(fontSize)) else {
+                        continue
+                    }
+                    element.font = font
                 }
             }
         }
