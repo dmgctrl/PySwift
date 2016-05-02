@@ -86,6 +86,14 @@ enum ProgressViewProperties: String {
     case TrackImage = "trackImage"
 }
 
+// MARK: Text Views
+
+enum TextViewProperties: String {
+    case TextColor = "textColor"
+    case FontStyle = "fontStyle"
+    case TextAlignment = "textAlignment"
+}
+
 // MARK: Miscellaneous
 
 enum ColorProperties: String {
@@ -103,6 +111,7 @@ enum UIElements: String {
     case Sliders = "Sliders"
     case Steppers = "Steppers"
     case ProgressViews = "ProgressViews"
+    case TextViews = "TextViews"
 }
 
 enum CommonObjects: String {
