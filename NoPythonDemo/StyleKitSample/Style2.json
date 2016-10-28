@@ -1,0 +1,1159 @@
+{
+    "Fonts": {
+        "primaryNationalFontLight":"National-Light",
+        "primaryNationalFontRegular":"National-Regular",
+        "primaryNationalFontRegularItalic":"National-RegularItalic",
+        "primaryNationalFontBold":"National-Bold",
+        "primaryNationalFontSemibold":"National-Semibold",
+        "primaryNationalFontBoldItalic":"National-BoldItalic",
+        "primaryNationalFontLightItalic":"National-LightItalic",
+        "primaryTiemposHeadlineRegular": "TiemposHeadline-Regular",
+        "primaryTiemposHeadlineRegularItalic": "TiemposHeadline-RegularItalic",
+        "primaryTiemposHeadlineLight": "TiemposHeadline-Light"
+    },
+    "Colors": {
+        "white": {
+            "hex": "#FFFFFF",
+            "alpha": 1
+        },
+        "clear": {
+            "hex": "#000000",
+            "alpha": 0.0
+        },
+        "black": {
+            "hex": "#000000",
+            "alpha": 1
+        },
+        "darkGray": {
+            "hex": "#333333",
+            "alpha": 1
+        },
+        "gray": {
+            "hex": "#666666",
+            "alpha": 1
+        },
+        "mediumGray": {
+            "hex": "#DDDDDD",
+            "alpha": 1
+        },
+        "lightGray": {
+            "hex": "#F6F6F6",
+            "alpha": 1
+        },
+        "lightGrayAlpha": {
+            "hex": "#666666",
+            "alpha": 0.6
+        },
+        "borderGray": {
+            "hex": "#DDDDDD",
+            "alpha": 1
+        },
+        "cardBorderGray": {
+            "hex": "#EEEEEE",
+            "alpha": 1
+        },
+        "hingeTeal": {
+            "hex": "#82D9C9",
+            "alpha": 1
+        },
+        "hingeBlue": {
+            "hex": "#25ACD7",
+            "alpha": 1
+        },
+        "darkCoral": {
+            "hex": "#CE5252",
+            "alpha": 1
+        },
+        "opaqueBlack": {
+            "hex": "#000000",
+            "alpha": 0.45
+        },
+        "darkBlue": {
+            "hex": "#3B5998",
+            "alpha": 1
+        },
+        "darkerBlue": {
+            "hex": "#2E477B",
+            "alpha": 1
+        },
+        "offWhite": {
+            "hex": "#AAAAAA",
+            "alpha": 1
+        },
+        "red": {
+            "hex": "#CE5252",
+            "alpha": 1
+        },
+        "inactive": {
+            "hex": "#AAAAAA",
+            "alpha": 1
+        },
+        "invisible": {
+            "hex": "#CCCCCC",
+            "alpha": 1
+        },
+        "hingeLime": {
+            "hex": "#99CA3C",
+            "alpha": 1
+        },
+        "swanOffBlack": {
+            "hex": "#2E2E2E",
+            "alpha": 1
+        },
+        "textBlack": {
+            "hex": "#1A1A1A",
+            "alpha": 1
+        },
+        "swanGreen": {
+            "hex": "#7ADFB9",
+            "alpha": 1
+        },
+        "lightSwanGreen": {
+            "hex": "#A5EFD3",
+            "alpha": 1
+        },
+        "swanPink": {
+            "hex": "#F79F9C",
+            "alpha": 1
+        },
+        "lightSwanPink": {
+            "hex": "#FBB4AA",
+            "alpha": 1
+        },
+        "backgroundGray": {
+            "hex": "#F3F3F3",
+            "alpha": 1
+        }
+    },
+    "Images": {
+        "editProfileDoneButtonBackground": "doneIcon",
+        "likeBackgroundImageView": "likeIndicatorContainer",
+        "heartLikeIcon": "likeIcon",
+        "feedNoteBackgroundView": "noteContainer",
+        "appIcon": "AppIcon",
+        "feedEmptyStateCheck": "feedEmptyStateCheck",
+        "likeActionIcon": "likeAction",
+        "noteActionIcon": "noteAction",
+        "notMyTypeActionIcon": "notMyTypeAction",
+        "logoBlue": "logoBlue",
+        "startPreferencesIcon": "startPreferencesIcon",
+        "startProfileIcon": "startProfileIcon",
+        "pushNotifIcon": "pushNotifIcon",
+        "locLabelPointerRed": "locLabelPointerRed",
+        "locLabelPointer": "locLabelPointer",
+        "fbIconActive": "fbIconActive",
+        "fbIconInactive": "fbIconInactive",
+        "igIconActive": "igIconActive",
+        "igIconInactive": "igIconInactive",
+        "editIcon": "editIcon",
+        "doneIcon": "doneIcon",
+        "visibleIcon": "visibleIcon",
+        "hideIcon": "hideIcon",
+        "listeningIcon": "listeningIcon",
+        "listeningIconInactive": "listeningIconInactive",
+        "quoteIcon": "quoteIcon",
+        "quoteIconInactive": "quoteIconInactive",
+        "readingIcon": "readingIcon",
+        "readingIconInactive": "readingIconInactive",
+        "watchingIcon": "watchingIcon",
+        "watchingIconInactive": "watchingIconInactive",
+        "noNetworkIcon": "noNetworkIcon",
+        "noteHideIcon": "noteHideIcon",
+        "noteShowIcon": "noteShowIcon"
+    },
+    "Views": {
+        "EditProfileBackdrop": {
+            "backgroundColor": "lightGrayAlpha"
+        },
+        "profileImage": {
+            "cornerRadius": 3
+        },
+        "special": {
+            "backgroundColor": "lightGray",
+            "borderColor": "white",
+            "borderWidth": 2,
+            "cornerRadius": 10
+        },
+        "OutgoingBubble": {
+            "backgroundColor": "white"
+        },
+        "IncomingBubble": {
+            "backgroundColor": "hingeTeal"
+        },
+        "BasicsCell": {
+            "backgroundColor": "black",
+            "borderColor": "black",
+            "borderWidth": 1,
+            "cornerRadius": 20
+        },
+        "NewRecommendations": {
+            "backgroundColor": "hingeBlue",
+            "cornerRadius": 22
+        },
+        "CardContainer": {
+            "backgroundColor": "white",
+            "cornerRadius": 6
+        },
+        "MarkerViewBlack": {
+            "backgroundColor": "black",
+            "borderColor": "black",
+            "borderWidth": 1,
+            "cornerRadius": 20
+        },
+        "MarkerViewRed": {
+            "backgroundColor": "red",
+            "borderColor": "red",
+            "borderWidth": 1,
+            "cornerRadius": 20
+        },
+        "NoteContainer": {
+            "backgroundColor": "white",
+            "borderColor": "borderGray",
+            "borderWidth": 1,
+            "cornerRadius": 26
+        }
+    },
+    "Labels": {
+        "H1": {
+            "textColor": "white",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryTiemposHeadlineRegular",
+                    "size": 50
+                },
+                "tracking": 10,
+                "lineSpacing": 0,
+                "ligature": 0
+            }
+        },
+        "H2": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 28
+                },
+                "tracking": 10,
+                "lineSpacing": 10,
+                "ligature": 0
+            }
+        },
+        "H3": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 20
+                },
+                "tracking": 10,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "H4": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 32
+                },
+                "tracking": 10,
+                "lineSpacing": 10,
+                "ligature": 0
+            }
+        },
+        "H5": {
+            "textColor": "white",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 28
+                },
+                "tracking": 10,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "H6": {
+            "textColor": "white",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 28
+                },
+                "tracking": 10,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "P1": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 16
+                },
+                "tracking": 10,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "P2": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "P2Inactive": {
+            "textColor": "inactive",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "P3": {
+            "textColor": "gray",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 20
+                },
+                "tracking": 5,
+                "lineSpacing": 10,
+                "ligature": 0
+            }
+        },
+        "P4": {
+            "textColor": "white",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "CenteredP4": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "P5": {
+            "textColor": "black",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "P6": {
+            "textColor": "black",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "P6Inactive": {
+            "textColor": "inactive",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "P7": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 20
+                },
+                "tracking": 5,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "P8": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 12
+                },
+                "tracking": 5,
+                "lineSpacing": 3,
+                "ligature": 0
+            }
+        },
+        "MarkerTitle": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "OutgoingBubbleMessage": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 16
+                },
+                "minimumLineHeight": 21,
+                "maximumLineHeight": 21
+            }
+        },
+        "OutgoingMessage": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 16
+                },
+                "minimumLineHeight": 21,
+                "maximumLineHeight": 21
+            }
+        },
+        "OutgoingMessageCentered": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "minimumLineHeight": 21,
+                "maximumLineHeight": 21
+            }
+        },
+        "FeedCellDetails": {
+            "textColor": "black",
+            "textAlignment": "Left",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "tracking": 5,
+                "lineSpacing": 2,
+                "ligature": 0
+            }
+        },
+        "DefaultMessage": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 16
+                },
+                "minimumLineHeight": 21,
+                "maximumLineHeight": 21
+            }
+        },
+        "DefaultMessageCentered": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "minimumLineHeight": 21,
+                "maximumLineHeight": 21
+            }
+        },
+        "NoConnectionMessage": {
+            "textColor": "darkCoral",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 12
+                }
+            }
+        },
+        "NoRecs": {
+            "textColor": "white",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 14
+                }
+            }
+        },
+        "ProfileTags": {
+            "textColor": "white",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                }
+            }
+        },
+        "ProfileTitle": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 16
+                }
+            }
+        },
+        "PrivacyLink": {
+            "textColor": "hingeBlue",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                }
+            }
+        },
+        "ConversationPreviewTextCentered": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                },
+                "minimumLineHeight": 18,
+                "maximumLineHeight": 18
+            }
+        },
+        "ConversationPreviewText": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                },
+                "minimumLineHeight": 18,
+                "maximumLineHeight": 18
+            }
+        },
+        "ConversationNameUnread": {
+            "textColor": "textBlack",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 22
+                },
+                "minimumLineHeight": 18,
+                "maximumLineHeight": 18
+            }
+        },
+        "ConversationPreviewTextUnread": {
+            "textColor": "textBlack",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 16
+                },
+                "minimumLineHeight": 18,
+                "maximumLineHeight": 18
+            }
+        },
+        "ConversationPreviewTextInactive": {
+            "textColor": "inactive",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                },
+                "minimumLineHeight": 18,
+                "maximumLineHeight": 18
+            }
+        },
+        "MessagePlaceholderText": {
+            "textColor": "mediumGray",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                }
+            }
+        },
+        "WelcomeScreenText": {
+            "textColor": "white",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 20
+                }
+            }
+        },
+        "MyType": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 18
+                }
+            }
+        },
+        "MyTypeHighlighted": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 18
+                }
+            }
+        },
+        "ImagesTabEmpty": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                }
+            }
+        },
+        "LikeInterstitialLead": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                },
+                "lineSpacing": 5
+            }
+        },
+        "LikeInterstitialBody": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 20
+                },
+                "lineSpacing": 6
+            }
+        },
+        "MyAccountHeader": {
+            "textColor": "offWhite",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                }
+            }
+        },
+        "PickerText": {
+            "textColor": "black",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 24
+                },
+                "tracking": 5,
+                "lineSpacing": 10,
+                "ligature": 0
+            }
+        },
+        "CustomSwitch": {
+            "textColor": "white",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 12
+                },
+                "lineSpacing": 5
+            }
+        },
+        "Dealbreaker": {
+            "textColor": "offWhite",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 16
+                }
+            }
+        },
+        "BasicsTitle": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontBold",
+                    "size": 14
+                }
+            }
+        },
+        "CharacterCount": {
+            "textColor": "red",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 14
+                }
+            }
+        },
+        "CharacterLimit": {
+            "textColor": "black",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontLight",
+                    "size": 14
+                }
+            }
+        },
+        "Error": {
+            "textColor": "darkCoral",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                }
+            }
+        },
+        "Success": {
+            "textColor": "hingeLime",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryNationalFontRegular",
+                    "size": 14
+                }
+            }
+        }
+    },
+    "Buttons": {
+        "B1SignIn": {
+            "borderColor": "darkBlue",
+            "borderWidth": 1,
+            "cornerRadius": 26,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "darkBlue",
+                "textColor": "white"
+            },
+            "selectedState": {
+                "backgroundColor": "darkerBlue",
+                "textColor": "white"
+            },
+            "highlightedState": {
+                "backgroundColor": "darkerBlue",
+                "textColor": "white"
+            }
+        },
+        "B2LikeNote": {
+            "borderColor": "clear",
+            "borderWidth": 0,
+            "cornerRadius": 22,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "clear",
+                "textColor": "white"
+            }
+        },
+        "NotMyType": {
+            "borderColor": "offWhite",
+            "borderWidth": 1,
+            "cornerRadius": 16,
+            "fontStyle": {
+                "font": "primaryNationalFontRegular",
+                "size": 14
+            },
+            "normalState": {
+                "backgroundColor": "black",
+                "textColor": "white"
+            }
+        },
+        "Done": {
+            "alpha": 1,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 14
+            },
+            "normalState": {
+                "backgroundColor": "lightSwanPink",
+                "textColor": "black"
+            },
+            "selectedState": {
+                "backgroundColor": "lightSwanPink",
+                "textColor": "black"
+            },
+            "highlightedState": {
+                "backgroundColor": "lightSwanPink",
+                "textColor": "black"
+            }
+        },
+        "SendButton": {
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "white",
+                "textColor": "hingeBlue"
+            },
+            "selectedState": {
+                "backgroundColor": "white",
+                "textColor": "hingeBlue"
+            },
+            "highlightedState": {
+                "backgroundColor": "white",
+                "textColor": "hingeBlue"
+            }
+        },
+        "ProfileTitle": {
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "black"
+            }
+        },
+        "InterstitialButton": {
+            "borderColor": "hingeBlue",
+            "borderWidth": 1,
+            "cornerRadius": 25,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "hingeBlue",
+                "textColor": "white"
+            }
+        },
+        "EnablePushYes": {
+            "borderColor": "white",
+            "borderWidth": 1,
+            "cornerRadius": 26,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "white",
+                "textColor": "black"
+            }
+        },
+        "EnablePushNo": {
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "white"
+            }
+        },
+        "NoteInterstitialConfirm": {
+            "borderColor": "lightSwanGreen",
+            "borderWidth": 1,
+            "cornerRadius": 26,
+            "backgroundColor": "lightSwanGreen",
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 14
+            },
+            "normalState": {
+                "textColor": "black"
+            }
+        },
+        "ConnectWith": {
+            "borderColor": "hingeBlue",
+            "borderWidth": 1,
+            "cornerRadius": 26,
+            "backgroundColor": "hingeBlue",
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "white"
+            }
+        },
+        "Next": {
+            "borderColor": "lightSwanGreen",
+            "borderWidth": 1,
+            "cornerRadius": 26,
+            "backgroundColor": "lightSwanGreen",
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 14
+            },
+            "normalState": {
+                "textColor": "black"
+            }
+        },
+        "NextDisabled": {
+            "borderColor": "cardBorderGray",
+            "borderWidth": 1,
+            "backgroundColor": "cardBorderGray",
+            "cornerRadius": 30,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 18
+            },
+            "normalState": {
+                "textColor": "offWhite"
+            }
+        },
+        "StartConnectingButton": {
+            "backgroundColor": "hingeBlue",
+            "cornerRadius": 30,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "white"
+            }
+        },
+        "LikeInterstitialCancel": {
+            "borderColor": "hingeBlue",
+            "borderWidth": 2,
+            "cornerRadius": 26,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "clear",
+                "textColor": "white"
+            }
+        },
+        "LikeInterstitialConfirm": {
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 14
+            },
+            "normalState": {
+                "backgroundColor": "clear",
+                "textColor": "swanGreen"
+            }
+        },
+        "Locate": {
+            "borderColor": "hingeBlue",
+            "borderWidth": 2,
+            "cornerRadius": 22,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "white",
+                "textColor": "hingeBlue"
+            },
+            "selectedState": {
+                "backgroundColor": "hingeBlue",
+                "textColor": "white"
+            },
+            "highlightedState": {
+                "backgroundColor": "hingeBlue",
+                "textColor": "white"
+            }
+        },
+        "DiscoverLikeDisabled": {
+            "borderWidth": 2,
+            "cornerRadius": 26,
+            "borderColor": "clear",
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "cardBorderGray",
+                "textColor": "offWhite"
+            }
+        },
+        "DiscoverLikeEnabled": {
+            "borderWidth": 2,
+            "cornerRadius": 26,
+            "borderColor": "clear",
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "hingeBlue",
+                "textColor": "white"
+            }
+        },
+        "LogOut": {
+            "fontStyle": {
+                "font": "primaryNationalFontRegular",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "black"
+            }
+        },
+        "linkStyle": {
+            "fontStyle": {
+                "font": "primaryNationalFontRegular",
+                "size": 14
+            },
+            "normalState": {
+                "textColor": "hingeBlue",
+                "textAlignment": "Left"
+            }
+        },
+        "NoteSend": {
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "hingeBlue"
+            },
+            "disabledState": {
+                "textColor": "inactive"
+            }
+        },
+        "NoteSecondaryAction": {
+            "backgroundColor": "hingeBlue",
+            "cornerRadius": 26,
+            "fontStyle": {
+                "font": "primaryNationalFontBold",
+                "size": 20
+            },
+            "normalState": {
+                "textColor": "white"
+            }
+        },
+        "Clear" : {
+            "fontStyle" : {
+                "font" : "primaryNationalFontBold",
+                "size" : 16
+            },
+            "normalState" : "white"
+        },
+        "AsNavButton": {
+            "fontStyle": {
+                "font": "primaryNationalFontRegular",
+                "size": 16
+            },
+            "normalState": {
+                "textColor": "hingeBlue"
+            },
+            "disabledState": {
+                "textColor": "inactive"
+            }
+        },
+        "UserInfoCardRadioCircle" : {
+            "fontStyle" : {
+                "font" : "primaryNationalFontLight",
+                "size" : 16
+            },
+            "normalState" : {
+                "textColor" : "black"
+            },
+            "selectedState" : {
+                "textColor" : "black"
+            }
+        },
+        "UserInfoCardRadioBlock" : {
+            "borderColor" : "borderGray",
+            "borderWidth" : 1,
+            "fontStyle" : {
+                "font" : "primaryNationalFontLight",
+                "size" : 16
+            },
+            "normalState" : {
+                "textColor" : "black",
+                "backgroundColor" : "white"
+            },
+            "highlightedState" : {
+                "textColor" : "black",
+                "backgroundColor" : "borderGray"
+            },
+            "selectedState" : {
+                "textColor" : "black",
+                "backgroundColor" : "borderGray"
+            }
+        }
+    },
+    "TextFields": {
+        "T1": {
+            "fontStyle": {
+                "font": "primaryNationalFontRegular",
+                "size": 17
+            },
+            "textColor": "black",
+            "backgroundColor": "white",
+            "borderColor": "clear",
+            "textAlignment": "Left",
+            "borderWidth": 0,
+            "cornerRadius": 0,
+            "borderStyle": "None"
+        }
+    },
+    "SegmentedControls": {
+    },
+    "TextViews": {
+        "TV1": {
+            "textColor": "blueColor",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryFontLight",
+                    "size": 20
+                }
+            }
+        }
+    }
+}
