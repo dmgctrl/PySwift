@@ -1,0 +1,200 @@
+{
+    "Fonts": {
+        "primaryFontLight":"BrandonGrotesque-Light",
+        "primaryFontMedium":"BrandonGrotesque-Medium",
+        "primaryFontBold":"BrandonGrotesque-Bold",
+        "primaryFontBlack":"BrandonGrotesque-Black",
+        "primaryFontLightItalic":"BrandonGrotesque-LightItalic"
+    },
+    "Colors": {
+        "purpleColor": {
+            "hex": "#A239B5",
+            "alpha": 1
+        },
+        "blueColor": {
+            "hex": "#005488",
+            "alpha": 1
+        },
+        "greenColor": {
+            "hex": "#49B93A",
+            "alpha": 1
+        },
+        "blackColor": {
+            "red": 0,
+            "green": 0,
+            "blue": 0,
+            "alpha": 1
+        },
+        "whiteColor": {
+            "hex": "#FFFFFF",
+            "alpha": 1
+        },
+        "clearColor": {
+            "hex": "#000000",
+            "alpha": 0.1
+        },
+        "lightBlueColor": {
+            "hex": "#8BC0E0",
+            "alpha": 0.75
+        },
+        "lightGrayColor": {
+            "hex": "#EFEFF4",
+            "alpha": 1
+        }
+    },
+    "Images": {
+        "buttonImage1": "black_button_image",
+        "thumbImageDefault" : "greenThumbImage"
+    },
+    "Views": {
+        "special": {
+            "backgroundColor": "lightGrayColor",
+            "borderColor": "blueColor",
+            "borderWidth": 2,
+            "cornerRadius": 10
+        },
+        "DayTimeReading": {
+            "backgroundColor": "whiteColor"
+        },
+        "NightTimeReading": {
+            "backgroundColor": "blackColor"
+        }
+    },
+    "Labels": {
+        "H1": {
+            "textColor": "blueColor",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryFontMedium",
+                    "size": 22
+                },
+                "tracking": 100,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        },
+        "H2": {
+            "textColor": "greenColor",
+            "textAlignment": "Center",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryFontLight",
+                    "size": 18
+                },
+                "tracking": 60,
+                "lineSpacing": 5,
+                "ligature": 0
+            }
+        }
+    },
+    "Buttons": {
+        "B1": {
+            "borderColor": "blueColor",
+            "borderWidth": 3,
+            "cornerRadius": 10,
+            "fontStyle": {
+                "font": "primaryFontMedium",
+                "size": 22
+            },
+            "normalState": {
+                "backgroundColor": "blueColor",
+                "textColor": "whiteColor"
+            },
+            "selectedState": {
+                "backgroundColor": "blackColor",
+                "textColor": "purpleColor"
+            },
+            "highlightedState": {
+                "backgroundColor": "greenColor",
+                "textColor": "blueColor"
+            }
+        },
+        "B2": {
+            "borderColor": "purpleColor",
+            "borderWidth": 0,
+            "cornerRadius": 5,
+            "fontStyle": {
+                "font": "primaryFontBold",
+                "size": 16
+            },
+            "normalState": {
+                "backgroundColor": "blueColor",
+                "textColor": "blackColor"
+            },
+            "selectedState": {
+                "backgroundColor": "blackColor",
+                "textColor": "purpleColor"
+            },
+            "highlightedState": {
+                "backgroundColor": "purpleColor",
+                "textColor": "whiteColor"
+            }
+        }
+    },
+    "TextFields": {
+        "T1": {
+            "fontStyle": {
+                "font": "primaryFontMedium",
+                "size": 17
+            },
+            "textColor": "whiteColor",
+            "backgroundColor": "lightBlueColor",
+            "borderColor": "greenColor",
+            "textAlignment": "Center",
+            "borderWidth": 3,
+            "cornerRadius": 10,
+            "borderStyle": "None"
+        }
+    },
+    "SegmentedControls": {
+        "default": {
+            "fontStyle": {
+                "font": "primaryFontBold",
+                "size": 15
+            },
+            "dividerColor": "clearColor",
+            "normalState": {
+                "backgroundColor": "greenColor",
+                "textColor": "whiteColor"
+            },
+            "selectedState": {
+                "backgroundColor": "blueColor",
+                "textColor": "whiteColor"
+            },
+            "highlightedState": {
+                "backgroundColor": "blackColor",
+                "textColor": "whiteColor"
+            }
+        }
+    },
+    "Sliders": {
+        "S1": {
+            "filledTrackColor": "purpleColor",
+            "emptyTrackColor": "greenColor",
+            "thumbImage": "thumbImageDefault"
+        }
+    },
+    "TextViews": {
+        "TV1": {
+            "textColor": "blueColor",
+            "attributes": {
+                "fontStyle": {
+                    "font": "primaryFontLight",
+                    "size": 20
+                }
+            }
+        },
+        "DayTimeReading": {
+            "textColor": "blackColor",
+            "textAlignment": "Left",
+            "backgroundColor": "whiteColor"
+        },
+        "NightTimeReading": {
+            "textColor": "whiteColor",
+            "textAlignment": "Left",
+            "backgroundColor": "blackColor"
+        }
+    }
+    
+}
