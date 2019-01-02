@@ -87,10 +87,10 @@ open class Style {
         case invalidLabelStyle
     }
     
-    open static let sharedInstance = Style()
+    public static let sharedInstance = Style()
     
     fileprivate let fileName = "Style.json"
-    open static let styleSheetLocationKey = "SKStylesheetLocation" // Make sure to update docs if this changes
+    public static let styleSheetLocationKey = "SKStylesheetLocation" // Make sure to update docs if this changes
     
     open var resources = CommonResources()
     
@@ -222,7 +222,7 @@ open class Style {
                 }
             }
 
-            assert(false, "error serializing JSON: \(error)")
+            //assert(false, "error serializing JSON: \(error)")
         }
     }
     

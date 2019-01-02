@@ -23,18 +23,18 @@ class LabelStyle: Stylist {
                                                                "Justified":.justified,
                                                                "Natural":.natural]
     
-    static func attributesForLabel(_ styles:AttributedTextStyle, textAlignment:NSTextAlignment) ->  Dictionary<NSAttributedStringKey, AnyObject> {
+    static func attributesForLabel(_ styles:AttributedTextStyle, textAlignment:NSTextAlignment) ->  Dictionary<NSAttributedString.Key, AnyObject> {
 
         
-        var attributes:[NSAttributedStringKey: AnyObject] = [:]
+        var attributes:[NSAttributedString.Key: AnyObject] = [:]
         
         if let fontName = styles.fontStyle?.fontName, let fontSize = styles.fontStyle?.size  {
-            attributes[NSAttributedStringKey.font] = UIFont(name: fontName, size: CGFloat(fontSize))
+            attributes[NSAttributedString.Key.font] = UIFont(name: fontName, size: CGFloat(fontSize))
         }
         
         if let tracking = styles.tracking, let fontSize = styles.fontStyle?.size {
             let characterSpacing = fontSize * tracking / 1000
-            attributes[NSAttributedStringKey.kern] = characterSpacing as AnyObject?
+            attributes[NSAttributedString.Key.kern] = characterSpacing as AnyObject?
         }
 
         let style = NSMutableParagraphStyle()
@@ -48,7 +48,7 @@ class LabelStyle: Stylist {
         if let lineSpace = styles.lineSpacing {
             style.lineSpacing = lineSpace
         }
-        attributes[NSAttributedStringKey.paragraphStyle] = style
+        attributes[NSAttributedString.Key.paragraphStyle] = style
         
         return attributes
     }

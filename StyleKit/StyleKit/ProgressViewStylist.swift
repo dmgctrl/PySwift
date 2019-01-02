@@ -6,7 +6,7 @@ class ProgressViewStyle : Stylist {
     
     typealias Element = UIProgressView
     
-    var style: UIProgressViewStyle?
+    var style: UIProgressView.Style?
     var progressTintColor: UIColor?
     var trackTintColor: UIColor?
     var progressImage: UIImage?
@@ -31,7 +31,7 @@ class ProgressViewStyle : Stylist {
             }
             switch property {
             case .Style:
-                if let theValue = value as? Int, let viewStyle = UIProgressViewStyle(rawValue: theValue) {
+                if let theValue = value as? Int, let viewStyle = UIProgressView.Style(rawValue: theValue) {
                     style.style = viewStyle
                 }
             case .ProgressTintColor:

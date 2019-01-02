@@ -27,15 +27,15 @@ extension UIColor {
 extension String {
     /// Converts hex format `#123ABC` or `123ABC` to Int value
     func hexColorToInt() -> Int? {
-        guard dropPoundPrefix.characters.count == 6 else { return nil }
+        guard dropPoundPrefix.count == 6 else { return nil }
         return dropPoundPrefix.hexaToDecimal
     }
 }
 
 extension String {
-    var dropPoundPrefix:       String { return hasPrefix("#") ? String(characters.dropFirst(1)) : self }
-    var drop0xPrefix:          String { return hasPrefix("0x") ? String(characters.dropFirst(2)) : self }
-    var drop0bPrefix:          String { return hasPrefix("0b") ? String(characters.dropFirst(2)) : self }
+    var dropPoundPrefix:       String { return hasPrefix("#") ? String(self.dropFirst(1)) : self }
+    var drop0xPrefix:          String { return hasPrefix("0x") ? String(self.dropFirst(2)) : self }
+    var drop0bPrefix:          String { return hasPrefix("0b") ? String(self.dropFirst(2)) : self }
     var hexaToDecimal:            Int { return Int(drop0xPrefix, radix: 16) ?? 0 }
     var hexaToBinaryString:    String { return String(hexaToDecimal, radix: 2) }
     var decimalToHexaString:   String { return String(Int(self) ?? 0, radix: 16) }
@@ -52,7 +52,7 @@ extension Int {
 extension UIImage {
     
     class func imageWithColor(_ color: UIColor) -> UIImage {
-        let rect = CGRect(x: 0, y: 0, width: 0.5, height: 44.0)
+        let rect = CGRect(x: 0, y: 0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
         context!.setFillColor(color.cgColor);

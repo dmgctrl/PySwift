@@ -12,7 +12,7 @@ class TextFieldStyle : Stylist {
     var borderWidth: Int?
     var cornerRadius: Int?
     var textAlignment: NSTextAlignment?
-    var borderStyle: UITextBorderStyle?
+    var borderStyle: UITextField.BorderStyle?
     var backgroundColor: UIColor?
     
     enum Properties: String {
@@ -84,10 +84,10 @@ class TextFieldStyle : Stylist {
         return nil
     }
     
-    static func mapBorderStyle(_ styleStr:String) -> UITextBorderStyle?  {
+    static func mapBorderStyle(_ styleStr:String) -> UITextField.BorderStyle?  {
         let allowedValues = ["None","Line","Bezel","RoundedRect"]
         if let index = allowedValues.index(of: styleStr) {
-            return UITextBorderStyle(rawValue: index)
+            return UITextField.BorderStyle(rawValue: index)
         }
         return nil
     }
