@@ -128,7 +128,7 @@ extension UIButton {
         }
     }
     
-    func assignColors(_ colors: ColorStyle, forState state: UIControlState, resources:CommonResources) {
+    func assignColors(_ colors: ColorStyle, forState state: UIControl.State, resources:CommonResources) {
         if let colorKey = colors.backgroundColor, let color = resources.colors[colorKey] {
             self.setBackgroundImage(UIImage.imageWithColor(color), for: state)
         }

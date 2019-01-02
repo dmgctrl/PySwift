@@ -24,12 +24,12 @@ class StepperStyle : Stylist {
         case Disabled = "disabledState"
     }
     
-    static func controlStateForAllowedState(_ state:AllowedStates) -> UIControlState {
+    static func controlStateForAllowedState(_ state:AllowedStates) -> UIControl.State {
         switch state {
         case .Disabled:
-            return UIControlState.disabled
+            return UIControl.State.disabled
         case .Highlighted:
-            return UIControlState.highlighted
+            return UIControl.State.highlighted
         case .Normal:
             return .normal
         }
